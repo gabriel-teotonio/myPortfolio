@@ -1,0 +1,84 @@
+@import '../components/variables';
+@import '../components/buttons';
+
+
+.projects{
+    height: auto;
+    min-height: 100vh;
+    width: 100%;
+    text-align: center;
+    margin: 4rem 0;
+    .row{
+        max-width: 70rem;
+        margin-top: 4rem;
+    }
+    .tabs{
+        background:rgb(63, 47, 182);
+        border-radius: 6px 6px 0 0 ;
+
+        .tab{
+            a{
+                color: white;
+            }
+        }
+        .indicator{   
+            background-color: rgb(54, 155, 244);
+        }
+        a.active{
+            color: rgba(252, 252, 252, 0.455);
+            &:focus{
+                background-color: transparent;
+            }
+        }
+    } 
+    
+    .topic{
+        width: 100%;
+        .box-projects{
+            width: 100%;
+            padding: 2rem 1rem;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            grid-column-gap: 1rem;
+            grid-row-gap: 1rem;
+            gap: 2rem;
+        }
+        .box-project{
+                background: var(--gradient-secundary);
+                width: 100%;
+                padding-bottom: 1rem;
+                border-radius: .3rem;
+                img{
+                    width: 97%;
+                    margin-top: .5rem;
+                    border-radius: 6px;
+                }
+                .box-buttons{
+                    margin-top: 2rem;
+                    button{
+                        @include button-secundary();
+                    }
+                }
+            }
+        }
+    }
+    
+    
+    
+    @media (max-width:375px){
+        .projects{
+            .topic{
+                .box-projects{
+                    grid-template-columns: repeat(1, 1fr);
+                }
+            }
+            .tabs{
+                .tab{
+                    a{
+                        font-size: 8px;
+                    }
+                }
+            }
+        }
+    }

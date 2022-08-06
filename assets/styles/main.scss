@@ -1,0 +1,52 @@
+@import 'sections/header';
+@import 'sections/home';
+@import 'sections/features';
+@import 'sections/projects';
+@import 'sections/about';
+@import 'sections/contact';
+@import 'sections/footer';
+@import 'components/variables';
+@import 'components/buttons';
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgba(6, 20, 41, 1);
+    font-family: 'Inter', sans-serif;
+    color: white;
+}
+main{
+    height: auto;
+    overflow-x: hidden;
+}
+
+
+html.sr .load-hidden {
+    visibility: hidden;
+}
+
+
+
+// redefiniçoes de estilos do materialize
+.material-tooltip{
+    background: var(--gradient-secundary);
+}
+.btn{
+    @include button-primary();
+}
+
+.carousel-slide{
+    min-height: 800px;
+}
+.carousel{
+    min-height: 900px;
+    height: auto;
+    padding-bottom: 1rem;
+}
+
+

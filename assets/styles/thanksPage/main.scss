@@ -1,0 +1,84 @@
+@import '../components/variables';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background-color: var(--bg-color);
+    color: white;
+    font-family: 'Inter', sans-serif;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+    padding: 2rem;
+    height: auto;
+    position: relative;
+
+    img{
+        position: absolute;
+        width: 10rem;
+        left: -6rem;
+    }
+
+    h1{
+        font-size: 6rem;
+    }
+    a{
+        text-decoration: none;
+    }
+    div{
+            i{
+                color: var(--color-primary);
+                font-size: 3rem;
+                margin: 0 .4rem;
+                transition: .3s ease-in-out;
+                &:hover{
+                    transform: translateY(-3px);
+                }
+            }
+    }
+    .back{
+        display: flex;
+        align-items: center;
+        gap: .5rem;
+        font-size: 2rem;
+        color: var(--color-primary);
+        margin-top: 4rem;
+        &:hover{
+            filter: brightness(60%);
+        }
+    }
+}
+
+
+@media (max-width:700px){
+    main{
+        overflow: hidden;
+        padding: 0;
+        min-height: 100vh;
+        width: 100%;
+        img{
+            left: 0;
+            bottom: 0;
+        }
+        h1{
+            font-size: 4rem
+        }
+        .back{
+            font-size: 1rem;
+        }
+    }
+}

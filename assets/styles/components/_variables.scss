@@ -1,0 +1,18 @@
+
+
+:root{
+    --bg-color:rgba(6, 20, 41, 1);
+    --color-primary:#376DF6;
+    --color-secundary:#35205b;
+    --gradient-primary:linear-gradient(97.15deg, #2AC1F7 8.35%, #376DF6 98.84%);
+    --gradient-secundary:linear-gradient(143.15deg, #1572B6 0.25%, rgba(80, 5, 175, 0.59) 99.64%);;
+
+    // 
+    --title-section_bold: 600;
+}
+
+
+
+.title-section{
+    font-weight: var(--title-section_bold);
+}

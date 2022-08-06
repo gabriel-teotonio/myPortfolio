@@ -1,0 +1,68 @@
+@import '../components/variables';
+
+
+.features{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    height: auto;
+    gap: 2rem;
+    .features-tools{
+        justify-content: center;
+        margin-top: 2.5rem;
+        padding: 0 1rem;
+        ul{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            list-style: none;
+            gap: 3rem;
+            flex-wrap: wrap;
+        }
+    }
+    .features-skills{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        margin: 4rem 0;
+        margin-top: 6rem;
+        .box-skills{
+            display: flex;
+            gap: 1rem;
+            .box-skill{
+                background-color: transparent;
+                border: 1px solid var(--color-primary);
+                margin: 1rem;
+                max-width: 320px;
+                padding: 4rem 1rem;
+                border-radius: 4px;
+                h5{
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+    button{
+        margin-top: 2rem;
+    }
+}
+
+
+@media (max-width:731px){
+   .box-skills{
+    flex-direction: column;
+   }
+}
+
+@media (max-width:420px){
+    .features{
+        h3{
+            font-size: 2rem;
+        }
+    }
+}
