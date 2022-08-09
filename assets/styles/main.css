@@ -88,7 +88,7 @@ header nav ul a.active {
   font-size: 5rem;
 }
 .home .home-content .social-medias a i {
-  font-size: 2.5rem;
+  font-size: 3rem;
   background-image: var(--gradient-primary);
   background-clip: text;
   -webkit-background-clip: text;
@@ -201,7 +201,7 @@ header nav ul a.active {
 .features .features-skills .box-skills .box-skill h5 {
   font-weight: 600;
 }
-.features button {
+.features .btn-feature {
   margin-top: 2rem;
 }
 
@@ -279,6 +279,9 @@ header nav ul a.active {
   margin-top: 0.5rem;
   border-radius: 6px;
 }
+.projects .topic .box-project .box-content h5 {
+  font-weight: 600;
+}
 .projects .topic .box-project .box-buttons {
   margin-top: 2rem;
 }
@@ -297,7 +300,7 @@ header nav ul a.active {
   filter: brightness(80%);
 }
 
-@media (max-width: 375px) {
+@media (max-width: 430px) {
   .projects .topic .box-projects {
     grid-template-columns: repeat(1, 1fr);
   }
@@ -319,7 +322,6 @@ header nav ul a.active {
 }
 
 .about {
-  min-height: 100vh;
   height: auto;
   display: flex;
   flex-direction: column;
@@ -348,8 +350,13 @@ header nav ul a.active {
 .about .about-buttons {
   display: flex;
   margin-top: 2rem;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 1rem;
 }
-.about .about-buttons button {
+.about .about-buttons a button {
+  width: 100%;
   background: rgba(14, 33, 63, 0.611);
   color: white;
   border: none;
@@ -361,10 +368,9 @@ header nav ul a.active {
   cursor: pointer;
   border-radius: 2rem;
   padding: 0 3rem;
-  margin: 0 1rem;
   text-transform: uppercase;
 }
-.about .about-buttons button:hover {
+.about .about-buttons a button:hover {
   filter: brightness(80%);
 }
 .about .about-buttons .about-btn_1 {
@@ -393,7 +399,9 @@ header nav ul a.active {
   }
   .about .about-buttons {
     flex-direction: column;
-    gap: 1rem;
+  }
+  .about .about-buttons a {
+    width: 90%;
   }
 }
 .contact {
@@ -412,7 +420,13 @@ header nav ul a.active {
   margin: 0;
 }
 .contact .social-medias {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
+}
+.contact .social-medias p {
+  width: 70%;
 }
 .contact .social-medias i {
   font-size: 2rem;
@@ -466,6 +480,9 @@ form button span {
   }
   .contact button span {
     justify-content: center;
+  }
+  .contact .social-medias a i {
+    font-size: 3rem;
   }
 }
 .page-footer {

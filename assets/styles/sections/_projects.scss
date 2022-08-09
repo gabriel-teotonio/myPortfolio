@@ -54,6 +54,11 @@
                     margin-top: .5rem;
                     border-radius: 6px;
                 }
+                .box-content{
+                    h5{
+                        font-weight: 600;
+                    }
+                }
                 .box-buttons{
                     margin-top: 2rem;
                     button{
@@ -66,7 +71,7 @@
     
     
     
-    @media (max-width:375px){
+    @media (max-width:430px){
         .projects{
             .topic{
                 .box-projects{
