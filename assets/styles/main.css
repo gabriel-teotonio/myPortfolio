@@ -285,7 +285,7 @@ header nav ul a.active {
 .projects .topic .box-project .box-buttons {
   margin-top: 2rem;
 }
-.projects .topic .box-project .box-buttons button {
+.projects .topic .box-project .box-buttons a button {
   background: rgba(14, 33, 63, 0.611);
   color: white;
   border: none;
@@ -296,7 +296,7 @@ header nav ul a.active {
   height: 2.5rem;
   cursor: pointer;
 }
-.projects .topic .box-project .box-buttons button:hover {
+.projects .topic .box-project .box-buttons a button:hover {
   filter: brightness(80%);
 }
 
@@ -542,7 +542,7 @@ body {
 
 main {
   height: auto;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 html.sr .load-hidden {

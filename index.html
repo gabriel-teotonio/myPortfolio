@@ -21,12 +21,20 @@
     <!-- font -->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <noscript>
+      <style>
+        html.sr .load-hidden {
+        visibility: visible;
+        }
+      </style>
+    </noscript>
 </head>
 <body>
     <header>
         <nav>
             <div class="nav-wrapper">
-              <a href="#"><img src="images/Frame 37.svg" alt="logo"></a>
+              <a href="thanks.html"><img src="images/Frame 37.svg" alt="logo"></a>
               <a href="#" data-target="mobile-demo" class="hide-on-med-and-up
               right sidenav-trigger"><i class="material-icons">menu</i></a>
               <ul class=" hide-on-small-and-down">
@@ -47,7 +55,7 @@
         </ul>
     <main>
       <section id="home" class="home scrollspy">
-        <article class="home-content">
+        <article class="home-content load-hidden">
           <p>Olá, eu sou</p>
           <h1>Gabriel Teotonio</h1>
           <h5>Desenvolvedor Web Front-End</h5>
@@ -56,7 +64,7 @@
             <a target="_blank" href="https://github.com/gabriel-teotonio"><i class="fa-brands fa-square-github"></i></a>
           </div>
         </article>
-        <article class="home-image"><img src="images/web-development 1 svg.svg" alt="imagem principal"></article>
+        <article class="home-image load-hidden"><img src="images/web-development 1 svg.svg" alt="imagem principal"></article>
       </section>
 
       <section id="features" class="features scrollspy">
@@ -112,8 +120,19 @@
           
           <div id="topic1" class="topic">
             <div class="box-projects">
+              <div class="box-project">
+                <img src="images/mockup-itsTeki.png" alt="capa do projeto">
+                <div class="box-content">
+                  <h5>Agência de WebSites</h5>
+                  <p>Bootstrap, Scss, js</p>
+                  <div class="box-buttons">
+                    <a target="_blank" href="http://its-teki-agency.vercel.app/"><button>Demo</button></a>
+                    <a target="_blank" href="https://github.com/gabriel-teotonio/ItsTeki-agency"><button>Code</button></a>
+                  </div>
+                </div>
+              </div>
                 <div class="box-project">
-                  <img src="images/onefit-desktop.png" alt="">
+                  <img src="images/mockup-onefit (1).png" alt="capa do projeto">
                   <div class="box-content">
                     <h5>Landing Page Academia</h5>
                     <p>pagina de academia</p>
@@ -124,7 +143,7 @@
                   </div>
                 </div>
                 <div class="box-project">
-                  <img src="images/crud-capa.png" alt="">
+                  <img src="images/crud-capa.png" alt="capa do projeto">
                   <div class="box-content">
                     <h5>Cadastro de alunos</h5>
                     <p>CRUD em armazenamento no <b>localStorage</b></p>
@@ -135,23 +154,13 @@
                   </div>
                 </div>
                 <div class="box-project">
-                  <img src="images/events-image.png" alt="">
+                  <img src="images/mockup-Events.png" alt="capa do projeto">
                   <div class="box-content">
                     <h5>Criação de eventos</h5>
                     <p>crie e gerencie eventos com banco de dados do <b>firebase</b></p>
                     <div class="box-buttons">
                       <a target="_blank" href="http://criar-eventos.vercel.app/"><button>Demo</button></a>
                       <a target="_blank" href="https://github.com/gabriel-teotonio/CriarEventos"><button>Code</button></a>
-                    </div>
-                  </div>
-                </div>
-                <div class="box-project">
-                  <img src="" alt="">
-                  <div class="box-content">
-                    <h5>Em desenvolvimento</h5>
-                    <div class="box-buttons">
-                      <button>Demo</button>
-                      <button>Code</button>
                     </div>
                   </div>
                 </div>
@@ -167,24 +176,24 @@
       <section id="about" class="about scrollspy">
         <h3 class="title-section">Sobre mim</h3>
         <article class="about-content">
-          <div class="content-text">
+          <div class="content-text load-hidden">
             <p>Olá, eu sou de Belém do Pará e tenho 18 anos, Adoro criar interfaces elegantes e funcionais
               que fascinam o usuário.
             </p>
-            <p>Estou estudando contantemente para aprimorar minhas habilidades e mostrar o que sei aplicando em projetos feitos por mim,
+            <p>Estou estudando constantemente para aprimorar minhas habilidades e mostrar o que sei aplicando em projetos feitos por mim,
               além de melhorar meus comportamentos interpessoais como resiliência, disciplina e comunicação.
             </p>
             <p>Por fim, estou sempre disposto a aprender coisas e projetos novos com bastante determinação :)</p>
           </div>
-          <img src="images/programing.png" alt="icone de programador">
+          <img class="about-img load-hidden" src="images/programing.png" alt="icone de programador">
         </article>
-        <div class="about-buttons">
+        <div class="about-buttons load-hidden">
           <a href=""><button class="about-btn_1 tooltipped" data-position="top" data-tooltip="baixar curriculo em PDF">baixar cv</button></a>
           <a target="_blank" href="https://www.linkedin.com/in/gabriel-teotonio/"><button class="about-btn_2">linkedin</button></a>
         </div>
       </section>
 
-      <section class="contact">
+      <section class="contact load-hidden">
         <article class="row contact-form">
           <form class="col s12" action="https://formsubmit.co/gabriel23teotonio@gmail.com" method="POST">
             <input type="hidden" name="_next" value="http://127.0.0.1:5500/thanks.html">
@@ -235,7 +244,7 @@
           </div>
           <div class="col l6 s12">
           <h5>Créditos</h5>
-            <p class="grey-text text-lighten-4">Imagem: flaticon</p>
+            <p class="grey-text text-lighten-4">Imagem: <a target="_blank" href="https://www.flaticon.com/br/">flaticon</a></p>
           </div>
           <div class="col l6 s12">
           <h5>Infos</h5>

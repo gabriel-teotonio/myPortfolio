@@ -61,8 +61,10 @@
                 }
                 .box-buttons{
                     margin-top: 2rem;
-                    button{
-                        @include button-secundary();
+                    a{
+                        button{
+                            @include button-secundary();
+                        }
                     }
                 }
             }
